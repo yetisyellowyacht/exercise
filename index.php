@@ -21,6 +21,12 @@ and open the template in the editor.
 
 	<body>
         <div class="container">
+	        <div>
+	        	<?php
+	        		// The php code is here
+	        		echo time().' seconds since 01/01/1970';
+	        	?>
+	        </div>
 
 			<div class="post">
 				<h2>Post 1</h2>
