@@ -24,7 +24,36 @@ and open the template in the editor.
 	        <div>
 	        	<?php
 	        		// The php code is here
+	        		function gen_matrix($size) 
+	        		{
+	        			$arr = array();
+	        			$subarr = array();
+	        			for ($i = 0; $i < $size; $i++)
+	        			{
+	        				$subarr[] = '.';
+	        			}
+	        			for ($i = 0; $i < $size; $i++)
+	        			{
+	        				$arr[] = $subarr;
+	        			}
+	        			return $arr;
+	        		}
+
+	        		$board = gen_matrix(3);
+	        		$board[1][1] = 'X';
+	        		$board[0][0] = 'O';
+
 	        		echo time().' seconds since 01/01/1970';
+	        		echo '<pre>';
+	        		// tbd
+	        		foreach ($board as $line) {
+	        			foreach ($line as $cell) {
+	        				print($cell.' ');
+	        			}
+	        			print('<br>');
+	        		}
+	        		echo '</pre>';
+	        		echo '<hr>';
 	        	?>
 	        </div>
 
