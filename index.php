@@ -23,35 +23,24 @@ and open the template in the editor.
         <div class="container">
 
 			<div class="post">
-				<h2>Post 1</h2>
+				<h2>Basic Rules for D&amp;D</h2>
 				<em><?php echo date('Y-m-d, l');?></em>
 				<p>
-					The required format parameter of the date() function specifies 
-					how to format the date (or time). <br>
-					Here are some characters that are commonly used for dates:<br>
-				    d - Represents the day of the month (01 to 31)<br>
-				    m - Represents a month (01 to 12)<br>
-				    Y - Represents a year (in four digits)<br>
-				    l (lowercase 'L') - Represents the day of the week<br>
-					Other characters, like"/", ".", or "-" can also be inserted 
-					between the characters to add additional formatting.
-					The example below formats today's date in three different ways:
+					An article to be written.
 				</p>
 			</div>
 
 			<div class="post">
-				<h2>Post 2</h2>
+				<h2>Basic English Grammar Rules</h2>
 				<em><?php echo date('Y-m-d, l');?></em>
 				<p>
-					The required format parameter of the date() function specifies how to format the date (or time). <br>
-					Here are some characters that are commonly used for dates:<br>
+					Another unwritten article.
 				</p>
 			</div>
         </div>
 	</body>
 	
 	<footer>
-		<hr>
 		<hr>
 		&copy; <?php echo date('Y');?>
 	</footer>
