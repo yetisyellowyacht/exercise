@@ -52,6 +52,7 @@ and open the template in the editor.
 	
 	<footer>
 		<hr>
+		<hr>
 		&copy; <?php echo date('Y');?>
 	</footer>
 
