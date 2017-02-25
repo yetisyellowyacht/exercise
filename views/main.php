@@ -14,16 +14,8 @@
 	</header>
 
 	<body>
-        <?php foreach ($postsdb as $post) : ?>
-        <div class="container">
-			<div class="post">
-				<a href="views/p.php?id=<?=$post['id']?>"><?=$post['title']?></a>
-				<br>
-				<em>Posted <?=$post['date']?></em>
-				<p><?=$post['content']?></p>
-			</div>
-		</div>
-	<?php endforeach; ?>
+		<!-- <?php var_dump($postsdb); echo '<hr>'; ?> --> <!-- this is a debug line -->
+		<?php isset($_GET['id']) ? article_show($_GET['id']) : article_list(); ?>
 	</body>
 	
 	<footer>
