@@ -14,14 +14,15 @@
 	}
 
 	function article_by_index($db, $i) {
-		// print_r($db[$i]['id']); echo "<br>";
+		extract($db[$i], EXTR_PREFIX_ALL, 'db');
+		global $DIR;
 		echo <<<_END
-		<div class=\"container\">
-			<div class=\"post\">
-				<a href=\"/?id=" . $db[$i]['id'] . "\">" . $db[$i]['title'] . "</a>
+		<div class="container">
+			<div class="post">
+				<a href="$DIR/?id=$db_id">$db_title</a>
 				<br>
-				<em>Posted on " . $db[$i]['date'] . "</em>
-				<p>" . $db[$i]['content'] . "</p>
+				<em>Posted on $db_date</em>
+				<p>$db_content</p>
 			</div>
 		</div>
 _END;
