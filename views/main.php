@@ -14,8 +14,7 @@
 	</header>
 
 	<body>
-		<!-- <?php var_dump($postsdb); echo '<hr>'; ?> --> <!-- this is a debug line -->
-		<?php isset($_GET['id']) ? article_show($_GET['id']) : article_list(); ?>
+		<?php isset($_GET['id']) ? article_show($postsdb, $_GET['id']) : article_show($postsdb); ?>
 	</body>
 	
 	<footer>
