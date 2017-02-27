@@ -17,4 +17,5 @@
 			'date' => '2017-02-26',
 			'content' => 'Simply explained, the 10 and 5 Rule suggests that anytime a guest is within ten feet of a staff member, the staff member should make eye contact and warmly smile to acknowledge the oncoming guests. <br>When a staff member is approximately five feet from a guest, a sincere greeting or friendly gesture of acknowledgement should accompany the eye contact and smile. <br>Successful companies in and out of the hospitality industry have adopted their own versions of the 10 and 5 Staff Rule. <br>At Wal-Mart, founder Sam Walton coined the \'Ten-Foot Attitude\' and said, "…I want you to promise that whenever you come within 10 feet of a customer, you will look him in the eye, greet him and ask him if you can help him."')
 	);
+	$DIR = '/gblog';
 ?>
